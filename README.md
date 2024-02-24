@@ -7,6 +7,11 @@ A 8-Queens game made in Python for a course homework,
 ```
 git clone https://github.com/Raphaelmos/8reines-game.git
 ```
+
+Libraries : 
+- Tkinter
+- Pygame
+- 
 ### Possible improvements
 
 If you see any problems, open a issue put the details of how it occured, how to reproduce and i will answer to it !
