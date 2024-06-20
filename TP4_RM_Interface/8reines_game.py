@@ -62,12 +62,13 @@ class Jeu(Tk):
         self.bind('3', lambda event: self.indice())
         self.bind('4', lambda event: self.resetAll())
 
-
+  #Definition de la music qui fonctionnera en permanence en 1 clic 
+  # Function definition with music playing in a loop 
     def play(self):
         pygame.mixer.music.load("Swingmusic50s.mp3")
         pygame.mixer.music.play(loops=-1)
         pygame.mixer.music.set_volume(0.01)
-
+ #Music button
     def play_sound(self):
         self.sound_on=PhotoImage(file="sonactif.png")
         self.sound_off=PhotoImage(file="soncoupe.png")
@@ -78,7 +79,7 @@ class Jeu(Tk):
             pygame.mixer.music.load("Swingmusic50s.mp3")
             pygame.mixer.music.play(loops= -1)
             pygame.mixer.music.set_volume(0.1)
-
+    # Cut the music
         else:
             self.music_btn.config(image=self.sound_off)
             self.music_btn["text"] = "Play musique"
